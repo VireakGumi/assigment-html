@@ -76,6 +76,72 @@
     border-bottom: 1px solid rgb(214, 214, 214);
 }
 
+.breadcrumbs {
+    margin-top: 10px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.breadcrumb-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-links a:hover {
+    color: #333;
+}
+
+.breadcrumb-links span {
+    color: #666;
+}
+
+.content-tools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-size-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.text-size-btn {
+    background-color: transparent;
+    border: 1px solid #ffd700;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffd700;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-family: "KBFG Text", Hanuman, sans-serif;
+}
+
+.text-size-btn:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+
+.social-share a {
+    color: #333;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.social-share a:hover {
+    color: #ffd700;
+}
+
 /* ===== HEX IMAGES ===== */
 .hex-grid {
     display: flex;
@@ -104,6 +170,26 @@
 .loan-content h2 {
     font-size: 26px;
     margin-bottom: 10px;
+}
+
+.profile-content {
+    margin-top: 20px;
+}
+
+.profile-content p {
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.6;
+    color: #333;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .loan-desc {
