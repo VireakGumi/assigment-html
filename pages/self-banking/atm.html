@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/repeat-style.css">
+    <style>
+        .loan-hero {
+            background: url('../../assets/atm-pc.png') center / cover no-repeat !important;
+        }
+
+        @media (max-width: 992px) {
+            .loan-hero {
+                background: url('../../assets/atm-mobile.png') center / cover no-repeat !important;
+                padding: 60px 0;
+                min-height: 50vh;
+            }
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <!-- OVERLAY -->
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">KB PRASAC Bank</span>
+            <button id="menuClose" class="close-btn">✕</button>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li class="menu-item">
+                <span>Bank Overview</span>
+                <span class="plus">+</span>
+            </li>
+            <li class="menu-item">
+                <span>Support</span>
+                <span class="plus">+</span>
+            </li>
+            <li class="menu-item">
+                <span>Media</span>
+                <span class="plus">+</span>
+            </li>
+            <li class="menu-item">
+                <span>Career</span>
+                <span class="plus">+</span>
+            </li>
+            <li class="menu-item">
+                <span>Investor Relations</span>
+                <span class="plus">+</span>
+            </li>
+            <li class="menu-item">
+                <span>ESG Management</span>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <p>Follow Us:</p>
+            <div class="social-icons">
+                <span>📘</span>
+                <span>📸</span>
+                <span>🎵</span>
+                <span>❌</span>
+                <span>💼</span>
+                <span>▶️</span>
+                <span>✈️</span>
+            </div>
+        </div>
+    </aside>
+
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <header class="header">
+        <div class="container header-inner">
+
+            <!-- LEFT -->
+            <div class="nav-left">
+                <!-- HAMBURGER -->
+                <button id="menuToggle" class="menu-toggle">☰</button>
+
+                <a class="logo" href="/">
+                    <span class="logo-icon">⚡</span>
+                    KB PRASAC Bank
+                </a>
+                <nav class="mobile-nav">
+                    <a href="#">Personal</a>a
+                    <a href="#">Business</a>
+                    <a href="#">Digital</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </nav>
+
+                <ul class="nav-menu">
+
+                    <!-- PERSONAL -->
+                    <li class="nav-item has-mega">
+                        <a href="#" class="nav-link active">Personal</a>
+
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+
+                                <!-- LOANS -->
+                                <div class="mega-col">
+                                    <h4>Loans</h4>
+                                    <a href="../loans/micro-business-loan.html">Micro Business Loan</a>
+                                    <a href="../loans/small-business-loan.html">Small Business Loan</a>
+                                    <a href="../loans/medium-business-loan.html">Medium Business Loan</a>
+                                    <a href="../loans/overdraft-loan.html">Overdraft Loan</a>
+                                    <a href="../loans/trade-finance-loan.html">Trade Finance Loan</a>
+                                </div>
+
+                                <!-- DEPOSITS -->
+                                <div class="mega-col">
+                                    <h4>Deposits</h4>
+                                    <a href="../deposits/current-account.html">Current Account</a>
+                                    <a href="../deposits/premium-current-account.html">Premium Current Account</a>
+                                    <a href="../deposits/savings-account.html">Savings Account</a>
+                                    <a href="../deposits/unfixed-deposit-account.html">Unfixed Deposit Account</a>
+                                    <a href="../deposits/term-deposit-account.html">Term Deposit Account</a>
+                                    <a href="../deposits/merchant-savings-account.html">Merchant Savings Account</a>
+                                </div>
+
+                                <!-- SELF-BANKING -->
+                                <div class="mega-col">
+                                    <h4>Self-Banking</h4>
+                                    <a href="../self-banking/kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                                    <a href="../self-banking/digital-account.html">Digital Account</a>
+                                    <a href="../self-banking/atm.html">ATM</a>
+                                    <a href="../self-banking/deposit-machine.html">Deposit Machine</a>
+                                    <a href="../self-banking/bill-payments.html">Bill Payments</a>
+                                    <a href="../self-banking/interbank-transfer.html">Interbank Fund Transfer</a>
+                                </div>
+
+                                <!-- SERVICES -->
+                                <div class="mega-col">
+                                    <h4>Services</h4>
+                                    <a href="../services/bill-payments.html">Bill Payments</a>
+                                    <a href="../services/international-transfer.html">International Fund Transfer</a>
+                                    <a href="../services/interbank-transfer.html">Interbank Fund Transfer</a>
+                                    <a href="../services/cash-code.html">Cash-Code</a>
+                                    <a href="../services/foreign-exchange.html">Foreign Exchange</a>
+                                    <a href="../services/standing-instruction.html">Standing Instruction</a>
+                                    <a href="../services/payroll-service.html">Payroll Service</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- BUSINESS -->
+                    <li class="nav-item has-mega">
+                        <a href="#" class="nav-link">Business</a>
+
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+
+                                <!-- LOANS -->
+                                <div class="mega-col">
+                                    <h4>Loans</h4>
+                                    <a href="../loans/micro-business-loan.html">Micro Business Loan</a>
+                                    <a href="../loans/small-business-loan.html">Small Business Loan</a>
+                                    <a href="../loans/medium-business-loan.html">Medium Business Loan</a>
+                                    <a href="../loans/overdraft-loan.html">Overdraft Loan</a>
+                                    <a href="../loans/trade-finance-loan.html">Trade Finance Loan</a>
+                                </div>
+
+                                <!-- DEPOSITS -->
+                                <div class="mega-col">
+                                    <h4>Deposits</h4>
+                                    <a href="../deposits/current-account.html">Current Account</a>
+                                    <a href="../deposits/premium-current-account.html">Premium Current Account</a>
+                                    <a href="../deposits/savings-account.html">Savings Account</a>
+                                    <a href="../deposits/unfixed-deposit-account.html">Unfixed Deposit Account</a>
+                                    <a href="../deposits/term-deposit-account.html">Term Deposit Account</a>
+                                    <a href="../deposits/merchant-savings-account.html">Merchant Savings Account</a>
+                                </div>
+
+                                <!-- BUSINESS SERVICES -->
+                                <div class="mega-col">
+                                    <h4>Business Services</h4>
+                                    <a href="../services/payroll-service.html">Payroll Service</a>
+                                    <a href="../services/cash-management.html">Cash Management</a>
+                                    <a href="../services/bank-confirmation.html">Bank Confirmation</a>
+                                    <a href="../services/standing-instruction.html">Standing Instruction</a>
+                                    <a href="../services/foreign-exchange.html">Foreign Exchange</a>
+                                </div>
+
+                                <!-- TRADE FINANCE -->
+                                <div class="mega-col">
+                                    <h4>Trade Finance</h4>
+                                    <a href="../trade-finance/import-finance.html">Import Finance</a>
+                                    <a href="../trade-finance/export-finance.html">Export Finance</a>
+                                    <a href="../trade-finance/guarantees.html">Guarantees</a>
+                                    <a href="../trade-finance/lc-services.html">LC Services</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- DIGITAL -->
+                    <li class="nav-item has-mega">
+                        <a href="#" class="nav-link">Digital</a>
+
+                        <div class="mega-menu">
+                            <div class="mega-grid">
+
+                                <div class="mega-col">
+                                    <h4>Digital Banking</h4>
+                                    <a href="../digital/kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                                    <a href="../digital/kb-prasac-corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/digital-account.html">Digital Account</a>
+                                </div>
+
+                                <div class="mega-col">
+                                    <h4>Self-Service</h4>
+                                    <a href="../digital/atm.html">ATM</a>
+                                    <a href="../digital/deposit-machine.html">Deposit Machine</a>
+                                    <a href="../digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/css.html">CSS</a>
+                                </div>
+
+                                <div class="mega-col">
+                                    <h4>Payments</h4>
+                                    <a href="../digital/bill-payments.html">Bill Payments</a>
+                                    <a href="../digital/interbank-transfer.html">Interbank Fund Transfer</a>
+                                    <a href="../digital/international-transfer.html">International Fund Transfer</a>
+                                    <a href="../digital/phone-topup.html">Phone Top Up</a>
+                                </div>
+
+                                <div class="mega-col">
+                                    <h4>Other Services</h4>
+                                    <a href="../digital/qr-payment.html">QR Payment</a>
+                                    <a href="../digital/tax-payment.html">Tax Payment</a>
+                                    <a href="../digital/merchant-services.html">Merchant Services</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="nav-right">
+                <span class="icon">🔍</span>
+                <span class="icon">🌐</span>
+                <a href="#" class="kb-btn">KB PRASAC Corporate</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="loan-hero">
+        <div class="container loan-hero-wrap">
+            <div class="loan-hero-text">
+                <h1>ATM</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <p class="breadcrumb">Self-Banking <strong>/ ATM</strong></p>
+    </div>
+
+
+    <section class="loan-page container">
+
+        <!-- LEFT -->
+        <div class="loan-content">
+
+            <h2>ATM</h2>
+
+            <p class="loan-desc">
+                KB PRASAC ATM is always nearby you at anytime and anywhere in Cambodia,
+                and offers you the convenient and safe cash transactions.
+            </p>
+
+            <p class="loan-desc">
+                With KB PRASAC ATM, you can perform self-banking transactions such as
+                cash withdrawal, fund transfer, Cash-Code, phone top-up,
+                view account balance, and print bank statement.
+            </p>
+
+            <!-- DAILY TRANSACTION -->
+            <div class="loan-block">
+                <h3>Daily Transaction and Service Tariff</h3>
+
+                <table class="kb-table">
+                    <thead>
+                        <tr>
+                            <th>Transactions</th>
+                            <th>Limit per Day</th>
+                            <th>Limit per Transaction</th>
+                            <th>Service Tariff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cash Withdrawal</td>
+                            <td>USD 5,000</td>
+                            <td>USD 3,000 / KHR 12,000,000</td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cash Deposit</td>
+                            <td>Unlimited</td>
+                            <td>USD 10,000 / KHR 20,000,000</td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Fund Transfer (KB PRASAC)</td>
+                            <td>USD 5,000</td>
+                            <td>USD 3,000</td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cash-Code</td>
+                            <td>USD 3,000</td>
+                            <td>USD 900 / KHR 3,600,000</td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Phone Top Up</td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Check Balance</td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Print Bank Statement</td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                            <td>Free of charge</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CURRENCY -->
+            <div class="loan-block">
+                <h3>Currency</h3>
+                <p class="loan-desc">
+                    You can use KB PRASAC ATM with Khmer Riel and United States Dollar.
+                    If a transaction is made in different currency, the system will automatically
+                    convert based on KB PRASAC daily exchange rate.
+                </p>
+            </div>
+
+            <!-- SECURITY TIPS -->
+            <div class="loan-block">
+                <h3>Security Tips of ATM Card Usage</h3>
+                <ul>
+                    <li>Keep your ATM card and PIN secure</li>
+                    <li>Do not share your PIN with anyone</li>
+                    <li>Cover keypad while entering PIN</li>
+                    <li>Report immediately if card is lost or stolen</li>
+                </ul>
+            </div>
+
+            <!-- NOTE -->
+            <div class="loan-block">
+                <h3>Note</h3>
+                <ul>
+                    <li>Number of transactions per day is unlimited</li>
+                    <li>Fees may change with prior notice</li>
+                    <li>Other terms and conditions apply</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT ASIDE -->
+        <aside class="loan-sidebar">
+
+            <div class="loan-nav">
+                <h4>Self-Banking</h4>
+                <a href="./kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                <a href="./digital-account.html">Digital Account</a>
+                <a class="active" href="./atm.html">ATM</a>
+                <a href="./deposit-machine.html">Deposit Machine</a>
+                <a href="./css.html">CSS</a>
+                <a href="./bill-payments.html">Bill Payments</a>
+                <a href="./phone-topup.html">Phone Top Up</a>
+                <a href="./cash-code.html">Cash-Code</a>
+            </div>
+
+            <div class="loan-promo">
+                <div class="promo-slider">
+                    <img src="../../assets/news2.png" alt="">
+                    <img src="../../assets/news1.png" alt="">
+                    <img src="../../assets/news3.png" alt="">
+                </div>
+            </div>
+
+        </aside>
+    </section>
+
+    <section class="related-loans container">
+        <h3>Related Products</h3>
+
+        <div class="related-grid">
+            <div class="related-card">
+                <img src="../../assets/news2.png">
+                <p>Dream Car Loan</p>
+            </div>
+            <div class="related-card">
+                <img src="../../assets/news3.png">
+                <p>Trade Finance Loan</p>
+            </div>
+            <div class="related-card">
+                <img src="../../assets/news1.png">
+                <p>Education Loan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">⚡ KB PRASAC Bank</div>
+                    <p>📍 Head Office Address: Building #1011</p>
+                    <p>No.426 Preah Monivong Blvd, Sangkat</p>
+                    <p>Boeng Keng Kang 1, Khan Chamkarmon,</p>
+                    <p>Phnom Penh, Cambodia.</p>
+                    <p>📞 (+855) 23 991 991 / 086 999 909 (24h TID)</p>
+                    <p>🌐 www.kbprasacbank.com</p>
+                    <p>📧 info@kbprasacbank.com</p>
+                    <p>💼 hr@kbprasacbank.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Terms and Conditions</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions / GDPR</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Shareholder</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 KB PRASAC Bank Plc.</p>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <div class="chat-button"></div>
+    <script src="../../js/main.js"></script>
+
+</body>
+
+</html>
