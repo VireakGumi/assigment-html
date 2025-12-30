@@ -1,16 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Top Up</title>
+    <title>Deposit Machine</title>
     <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/repeat-style.css">
+    <style>
+        .loan-hero {
+            background: url('../../assets/deposit-machine-pc.png') center / cover no-repeat !important;
+        }
 
+        @media (max-width: 992px) {
+            .loan-hero {
+                background: url('../../assets/deposit-machine-mobile.png') center / cover no-repeat !important;
+                padding: 60px 0;
+                min-height: 50vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +35,7 @@
             <button id="menuClose" class="close-btn">✕</button>
         </div>
 
-        <ul class="sidebar-menu" id="sidebarMenu">
+        <ul class="sidebar-menu">
             <li class="menu-item">
                 <span>Bank Overview</span>
                 <span class="plus">+</span>
@@ -203,25 +214,32 @@
 
                                 <div class="mega-col">
                                     <h4>Digital Banking</h4>
-                                    <a href="/pages/digital/digital-mobile.html">KB PRASAC Mobile</a>
-                                    <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                                    <a href="../digital/kb-prasac-corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/digital-account.html">Digital Account</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Self-Service</h4>
-                                    <a href="/pages/digital/atm.html">AMT</a>
-                                    <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/atm.html">ATM</a>
+                                    <a href="../digital/deposit-machine.html">Deposit Machine</a>
+                                    <a href="../digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/css.html">CSS</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Payments</h4>
-                                    <a href="/pages/digital/payments.html">Bill Payments</a>
-                                    <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
+                                    <a href="../digital/bill-payments.html">Bill Payments</a>
+                                    <a href="../digital/interbank-transfer.html">Interbank Fund Transfer</a>
+                                    <a href="../digital/international-transfer.html">International Fund Transfer</a>
+                                    <a href="../digital/phone-topup.html">Phone Top Up</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Other Services</h4>
-                                    <a href="/pages/digital/account.html">Digital Account</a>
+                                    <a href="../digital/qr-payment.html">QR Payment</a>
+                                    <a href="../digital/tax-payment.html">Tax Payment</a>
+                                    <a href="../digital/merchant-services.html">Merchant Services</a>
                                 </div>
 
                             </div>
@@ -241,102 +259,131 @@
         </div>
     </header>
 
-
-    <section class="phone-hero">
+    <section class="loan-hero">
         <div class="container loan-hero-wrap">
             <div class="loan-hero-text">
-                <h1>Phone Top Up</h1>
+                <h1>Deposit Machine</h1>
             </div>
         </div>
     </section>
 
-
     <div class="container">
-        <p class="breadcrumb">Digital <strong>/ Phone Top Up</strong></p>
+        <p class="breadcrumb">Self-Banking <strong>/ Deposit Machine</strong></p>
     </div>
+
     <section class="loan-page container">
+
         <!-- LEFT -->
         <div class="loan-content">
-            <h2>Phone Top Up</h2>
-            <p class="loan-desc">
-                No need to travel or find any stores for buying the phone scratch card, you can top up your mobile phone or your relative's 
-                phone with PIN code or PINLess through KB PRASAC Mobile. Please <a href="#">click here</a> to find information about KB PRASAC Mobile.
-            </p>
-            <div class="loan-block">
-                <div class="tabs">
-                    <button class="tab active">PIN Less</button>
-                </div>
 
-                <table class="operator-table">
+            <h2>Deposit Machine</h2>
+
+            <p class="loan-desc">
+                Now you can deposit into your account at anytime via KB PRASAC Cash Deposit Machine easily.
+                On top of this, you can perform self-banking transactions such as cash withdrawal, fund transfer,
+                Cash-Code, phone top-up, balance checking, and print bank statement.
+            </p>
+
+            <!-- DEPOSIT LIMIT -->
+            <div class="loan-block">
+                <h3>Deposit Limit</h3>
+
+                <table class="kb-table">
                     <thead>
                         <tr>
-                            <th>Operator</th>
-                            <th>Prefix</th>
-                            <th>Top-Up Amount</th>
-                            <th>Service Tariff</th>
+                            <th>Types of Deposit</th>
+                            <th>Limit per Transaction</th>
+                            <th>Limit per Day</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <img src="/assets/cellcard-logo.png" alt="Cellcard" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                011, 012, 014<br>
-                                017, 061, 076<br>
-                                077, 078, 085<br>
-                                089, 092, 095<br>
-                                099
-                            </td>
-                            <td>USD 1 to USD 50</td>
-                            <td>Free of Charge</td>
+                            <td>Deposit with Account Number</td>
+                            <td>KHR 3,960,000 or USD 990</td>
+                            <td>No limit</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="/assets/smart-logo.png" alt="Smart" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                010, 015, 016<br>
-                                069, 070, 081<br>
-                                086, 087, 093<br>
-                                096, 098
-                            </td>
-                            <td>USD 1 to USD 50</td>
-                            <td>Free of Charge</td>
+                            <td>Deposit via ATM Card</td>
+                            <td>KHR 20,000,000 or USD 20,000</td>
+                            <td>No limit</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="/assets/metfone-logo.png" alt="Metfone" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                097, 088, 090<br>
-                                071, 068, 067<br>
-                                066, 060, 031
-                            </td>
-                            <td>USD 1, USD 2, USD 5<br>USD 10, USD 20</td>
-                            <td>Free of Charge</td>
+                            <td>Deposit via ATM QR Code</td>
+                            <td>KHR 20,000,000 or USD 20,000</td>
+                            <td>No limit</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <!-- FEATURES -->
+            <div class="loan-block">
+                <h3>Features</h3>
+
+                <table class="kb-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Descriptions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currency</td>
+                            <td>KHR and USD</td>
+                        </tr>
+                        <tr>
+                            <td>Type of denomination</td>
+                            <td>
+                                KHR: 1,000 | 2,000 | 5,000 | 10,000 | 20,000 | 50,000 | 100,000<br>
+                                USD: 1 | 2 | 5 | 10 | 20 | 50 | 100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Number of notes per transaction</td>
+                            <td>Up to 200 notes</td>
+                        </tr>
+                        <tr>
+                            <td>Service Tariff</td>
+                            <td>Free of charge</td>
+                        </tr>
+                        <tr>
+                            <td>Other Banking Transactions</td>
+                            <td>Please refer to ATM webpage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOTE -->
+            <div class="loan-block">
+                <h3>Note</h3>
+                <ul>
+                    <li>Number of transactions per day is unlimited</li>
+                    <li>KB PRASAC reserves rights to change fee with prior notice as required by law</li>
+                    <li>Other terms and conditions apply</li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- RIGHT -->
         <aside class="loan-sidebar">
+
             <div class="loan-nav">
-                <h4>Digital</h4>
-                <a href="/pages/digital/digital-mobile.html" class="active">KB PRASAC Mobile</a>
-                <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
-                <a href="/pages/digital/account.html">Digital Account</a>
-                <a href="/pages/digital/atm.html">ATM</a>
-                <a href="/pages/digital/payments.html">Bill Payments</a>
-                <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
-                <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                <h4>Self-Banking</h4>
+                <a href="./kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                <a href="./digital-account.html">Digital Account</a>
+                <a href="./atm.html">ATM</a>
+                <a class="active" href="./deposit-machine.html">Deposit Machine</a>
+                <a href="./css.html">CSS</a>
+                <a href="./bill-payments.html">Bill Payments</a>
+                <a href="./phone-topup.html">Phone Top Up</a>
+                <a href="./cash-code.html">Cash-Code</a>
             </div>
 
             <div class="loan-promo">
                 <div class="promo-slider">
-
                     <img src="../../assets/news2.png" alt="">
                     <img src="../../assets/news1.png" alt="">
                     <img src="../../assets/news3.png" alt="">

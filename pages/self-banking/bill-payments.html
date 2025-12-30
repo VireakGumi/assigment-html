@@ -1,16 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Top Up</title>
+    <title>Bill Payments</title>
     <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/repeat-style.css">
 
+    <style>
+        .loan-hero {
+            background: url('../../assets/trade-pc.png') center / cover no-repeat !important;
+        }
+
+        @media (max-width: 992px) {
+            .loan-hero {
+                background: url('../../assets/trade-mobile.png') center / cover no-repeat !important;
+                padding: 60px 0;
+                min-height: 50vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +36,7 @@
             <button id="menuClose" class="close-btn">✕</button>
         </div>
 
-        <ul class="sidebar-menu" id="sidebarMenu">
+        <ul class="sidebar-menu">
             <li class="menu-item">
                 <span>Bank Overview</span>
                 <span class="plus">+</span>
@@ -203,25 +215,32 @@
 
                                 <div class="mega-col">
                                     <h4>Digital Banking</h4>
-                                    <a href="/pages/digital/digital-mobile.html">KB PRASAC Mobile</a>
-                                    <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                                    <a href="../digital/kb-prasac-corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/digital-account.html">Digital Account</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Self-Service</h4>
-                                    <a href="/pages/digital/atm.html">AMT</a>
-                                    <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/atm.html">ATM</a>
+                                    <a href="../digital/deposit-machine.html">Deposit Machine</a>
+                                    <a href="../digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/css.html">CSS</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Payments</h4>
-                                    <a href="/pages/digital/payments.html">Bill Payments</a>
-                                    <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
+                                    <a href="../digital/bill-payments.html">Bill Payments</a>
+                                    <a href="../digital/interbank-transfer.html">Interbank Fund Transfer</a>
+                                    <a href="../digital/international-transfer.html">International Fund Transfer</a>
+                                    <a href="../digital/phone-topup.html">Phone Top Up</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Other Services</h4>
-                                    <a href="/pages/digital/account.html">Digital Account</a>
+                                    <a href="../digital/qr-payment.html">QR Payment</a>
+                                    <a href="../digital/tax-payment.html">Tax Payment</a>
+                                    <a href="../digital/merchant-services.html">Merchant Services</a>
                                 </div>
 
                             </div>
@@ -241,102 +260,187 @@
         </div>
     </header>
 
-
-    <section class="phone-hero">
+    <section class="loan-hero">
         <div class="container loan-hero-wrap">
             <div class="loan-hero-text">
-                <h1>Phone Top Up</h1>
+                <h1>Bill Payments</h1>
             </div>
         </div>
     </section>
 
-
     <div class="container">
-        <p class="breadcrumb">Digital <strong>/ Phone Top Up</strong></p>
+        <p class="breadcrumb">Self-Banking <strong>/ Bill Payments</strong></p>
     </div>
+
     <section class="loan-page container">
+
         <!-- LEFT -->
         <div class="loan-content">
-            <h2>Phone Top Up</h2>
-            <p class="loan-desc">
-                No need to travel or find any stores for buying the phone scratch card, you can top up your mobile phone or your relative's 
-                phone with PIN code or PINLess through KB PRASAC Mobile. Please <a href="#">click here</a> to find information about KB PRASAC Mobile.
-            </p>
-            <div class="loan-block">
-                <div class="tabs">
-                    <button class="tab active">PIN Less</button>
-                </div>
 
-                <table class="operator-table">
+            <h2>Bill Payments</h2>
+
+            <p class="loan-desc">
+                Pay your utility and education bills conveniently via KB PRASAC Mobile,
+                ATM, or POS with fast, reliable, and secure service.
+            </p>
+
+            <!-- ELECTRICITY -->
+            <div class="loan-block">
+                <h3>Electricity Bill Payments</h3>
+
+                <table class="kb-table">
                     <thead>
                         <tr>
-                            <th>Operator</th>
-                            <th>Prefix</th>
-                            <th>Top-Up Amount</th>
-                            <th>Service Tariff</th>
+                            <th>Feature</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <img src="/assets/cellcard-logo.png" alt="Cellcard" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                011, 012, 014<br>
-                                017, 061, 076<br>
-                                077, 078, 085<br>
-                                089, 092, 095<br>
-                                099
-                            </td>
-                            <td>USD 1 to USD 50</td>
-                            <td>Free of Charge</td>
+                            <td>Providers</td>
+                            <td>EDC and private electricity companies</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="/assets/smart-logo.png" alt="Smart" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                010, 015, 016<br>
-                                069, 070, 081<br>
-                                086, 087, 093<br>
-                                096, 098
-                            </td>
-                            <td>USD 1 to USD 50</td>
-                            <td>Free of Charge</td>
+                            <td>Currency</td>
+                            <td>KHR / USD</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="/assets/metfone-logo.png" alt="Metfone" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                097, 088, 090<br>
-                                071, 068, 067<br>
-                                066, 060, 031
-                            </td>
-                            <td>USD 1, USD 2, USD 5<br>USD 10, USD 20</td>
-                            <td>Free of Charge</td>
+                            <td>Payment Condition</td>
+                            <td>Payment must be made before expiry date</td>
+                        </tr>
+                        <tr>
+                            <td>Limit per Day</td>
+                            <td>Unlimited</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <!-- WATER -->
+            <div class="loan-block">
+                <h3>Water Bill Payments</h3>
+
+                <table class="kb-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Providers</td>
+                            <td>Phnom Penh Water Supply Authority (PPWSA) and others</td>
+                        </tr>
+                        <tr>
+                            <td>Currency</td>
+                            <td>KHR / USD</td>
+                        </tr>
+                        <tr>
+                            <td>Payment Condition</td>
+                            <td>Payment before expiry date</td>
+                        </tr>
+                        <tr>
+                            <td>Limit per Day</td>
+                            <td>Unlimited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SOLID WASTE -->
+            <div class="loan-block">
+                <h3>Solid Waste Bill Payments</h3>
+
+                <table class="kb-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Providers</td>
+                            <td>Municipal Solid Waste Management Companies</td>
+                        </tr>
+                        <tr>
+                            <td>Currency</td>
+                            <td>KHR / USD</td>
+                        </tr>
+                        <tr>
+                            <td>Limit per Day</td>
+                            <td>Unlimited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="loan-block">
+                <h3>Education Bill Payments</h3>
+
+                <table class="kb-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currency</td>
+                            <td>USD</td>
+                        </tr>
+                        <tr>
+                            <td>Limit per Day</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Via KB PRASAC Mobile</td>
+                            <td>Free of charge</td>
+                        </tr>
+                        <tr>
+                            <td>Via ATM</td>
+                            <td>Free of charge</td>
+                        </tr>
+                        <tr>
+                            <td>Via Branch</td>
+                            <td>KHR 1,000 or USD 0.25 per transaction</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOTE -->
+            <div class="loan-block">
+                <h3>Note</h3>
+                <ul>
+                    <li>Please keep payment receipt for verification</li>
+                    <li>Payment must be made before expiry date</li>
+                    <li>Other terms and conditions apply</li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- RIGHT -->
         <aside class="loan-sidebar">
+
             <div class="loan-nav">
-                <h4>Digital</h4>
-                <a href="/pages/digital/digital-mobile.html" class="active">KB PRASAC Mobile</a>
-                <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
-                <a href="/pages/digital/account.html">Digital Account</a>
-                <a href="/pages/digital/atm.html">ATM</a>
-                <a href="/pages/digital/payments.html">Bill Payments</a>
-                <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
-                <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                <h4>Self-Banking</h4>
+                <a href="./kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                <a href="./digital-account.html">Digital Account</a>
+                <a href="./atm.html">ATM</a>
+                <a href="./deposit-machine.html">Deposit Machine</a>
+                <a href="./css.html">CSS</a>
+                <a class="active" href="./bill-payments.html">Bill Payments</a>
+                <a href="./phone-topup.html">Phone Top Up</a>
+                <a href="./cash-code.html">Cash-Code</a>
             </div>
 
             <div class="loan-promo">
                 <div class="promo-slider">
-
                     <img src="../../assets/news2.png" alt="">
                     <img src="../../assets/news1.png" alt="">
                     <img src="../../assets/news3.png" alt="">

@@ -1,16 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Top Up</title>
+    <title>CSS</title>
     <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/repeat-style.css">
 
+    <style>
+        .loan-hero {
+            background: url('../../assets/atm-pc.png') center / cover no-repeat !important;
+        }
+
+        @media (max-width: 992px) {
+            .loan-hero {
+                background: url('../../assets/atm-mobile.png') center / cover no-repeat !important;
+                padding: 60px 0;
+                min-height: 50vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +36,7 @@
             <button id="menuClose" class="close-btn">✕</button>
         </div>
 
-        <ul class="sidebar-menu" id="sidebarMenu">
+        <ul class="sidebar-menu">
             <li class="menu-item">
                 <span>Bank Overview</span>
                 <span class="plus">+</span>
@@ -242,101 +254,112 @@
     </header>
 
 
-    <section class="phone-hero">
+    <section class="loan-hero">
         <div class="container loan-hero-wrap">
             <div class="loan-hero-text">
-                <h1>Phone Top Up</h1>
+                <h1>CSS</h1>
             </div>
         </div>
     </section>
 
-
     <div class="container">
-        <p class="breadcrumb">Digital <strong>/ Phone Top Up</strong></p>
+        <p class="breadcrumb">Self-Banking <strong>/ CSS</strong></p>
     </div>
+
     <section class="loan-page container">
+
         <!-- LEFT -->
         <div class="loan-content">
-            <h2>Phone Top Up</h2>
-            <p class="loan-desc">
-                No need to travel or find any stores for buying the phone scratch card, you can top up your mobile phone or your relative's 
-                phone with PIN code or PINLess through KB PRASAC Mobile. Please <a href="#">click here</a> to find information about KB PRASAC Mobile.
-            </p>
-            <div class="loan-block">
-                <div class="tabs">
-                    <button class="tab active">PIN Less</button>
-                </div>
 
-                <table class="operator-table">
+            <h2>CSS</h2>
+
+            <p class="loan-desc">
+                All customers of banks and financial institutions which are members of
+                Cambodian Shared Switch (CSS) can make interbank transactions such as
+                cash withdrawal, fund transfer, balance inquiry, and account statement
+                through KB PRASAC ATM or POS in a convenient and safe manner.
+            </p>
+
+            <!-- PRODUCT FEATURES -->
+            <div class="loan-block">
+                <h3>Product Features</h3>
+
+                <table class="kb-table">
                     <thead>
                         <tr>
-                            <th>Operator</th>
-                            <th>Prefix</th>
-                            <th>Top-Up Amount</th>
-                            <th>Service Tariff</th>
+                            <th>Type of Transactions</th>
+                            <th>Amount per Transaction</th>
+                            <th>Fee</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                <img src="/assets/cellcard-logo.png" alt="Cellcard" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                011, 012, 014<br>
-                                017, 061, 076<br>
-                                077, 078, 085<br>
-                                089, 092, 095<br>
-                                099
-                            </td>
-                            <td>USD 1 to USD 50</td>
-                            <td>Free of Charge</td>
+                            <td>Cash Withdrawal</td>
+                            <td>KHR 200,000 or USD 500</td>
+                            <td>KHR 1,800 or USD 0.50</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="/assets/smart-logo.png" alt="Smart" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                010, 015, 016<br>
-                                069, 070, 081<br>
-                                086, 087, 093<br>
-                                096, 098
-                            </td>
-                            <td>USD 1 to USD 50</td>
-                            <td>Free of Charge</td>
+                            <td>Fast Payment (Interbank Transfer)</td>
+                            <td>KHR 200,000</td>
+                            <td>KHR 4,000</td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="/assets/metfone-logo.png" alt="Metfone" class="operator-logo">
-                            </td>
-                            <td class="prefix-list">
-                                097, 088, 090<br>
-                                071, 068, 067<br>
-                                066, 060, 031
-                            </td>
-                            <td>USD 1, USD 2, USD 5<br>USD 10, USD 20</td>
-                            <td>Free of Charge</td>
+                            <td>Balance Inquiry</td>
+                            <td>Unlimited</td>
+                            <td>KHR 500</td>
+                        </tr>
+                        <tr>
+                            <td>Statement</td>
+                            <td>Unlimited</td>
+                            <td>KHR 500</td>
+                        </tr>
+                        <tr>
+                            <td>Change PIN</td>
+                            <td>—</td>
+                            <td>Free of charge</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <!-- OTHER INFO -->
+            <div class="loan-block">
+                <h3>Other Information</h3>
+                <ul>
+                    <li>Number of transactions per day: Unlimited</li>
+                    <li>Transactions via KB PRASAC ATM or POS of CSS member banks</li>
+                    <li>Fee is determined by the bank or financial institution</li>
+                </ul>
+            </div>
+
+            <!-- NOTE -->
+            <div class="loan-block">
+                <h3>Note</h3>
+                <ul>
+                    <li>KB PRASAC reserves the right to change fees with prior notice</li>
+                    <li>Other terms and conditions apply</li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- RIGHT -->
         <aside class="loan-sidebar">
+
             <div class="loan-nav">
-                <h4>Digital</h4>
-                <a href="/pages/digital/digital-mobile.html" class="active">KB PRASAC Mobile</a>
-                <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
-                <a href="/pages/digital/account.html">Digital Account</a>
-                <a href="/pages/digital/atm.html">ATM</a>
-                <a href="/pages/digital/payments.html">Bill Payments</a>
-                <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
-                <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                <h4>Self-Banking</h4>
+                <a href="./kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                <a href="./digital-account.html">Digital Account</a>
+                <a href="./atm.html">ATM</a>
+                <a href="./deposit-machine.html">Deposit Machine</a>
+                <a class="active" href="./css.html">CSS</a>
+                <a href="./bill-payments.html">Bill Payments</a>
+                <a href="./phone-topup.html">Phone Top Up</a>
+                <a href="./cash-code.html">Cash-Code</a>
             </div>
 
             <div class="loan-promo">
                 <div class="promo-slider">
-
                     <img src="../../assets/news2.png" alt="">
                     <img src="../../assets/news1.png" alt="">
                     <img src="../../assets/news3.png" alt="">
