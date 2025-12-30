@@ -6,6 +6,55 @@
     display: flex;
     align-items: center;
 }
+.mobile-hero {
+    background: url('../assets/digital_pc.png') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.atm-hero {
+    background: url('../assets/atm.png') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.coporate-hero {
+    background: url('../assets/corporate.webp') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.cash-code {
+    background: url('../assets/cash-code.png') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.payment {
+    background: url('../assets/payment.png') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.phone-hero {
+    background: url('../assets/phone-top-up.png') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.account-hero {
+    background: url('../assets/digital-account.png') center / cover no-repeat;
+    padding: 80px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
 
 .loan-hero-wrap {
     display: grid;
@@ -23,6 +72,8 @@
     font-size: 14px;
     margin-top: 10px;
     color: #777;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(214, 214, 214);
 }
 
 /* ===== HEX IMAGES ===== */
@@ -46,7 +97,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 40px;
-    margin: 60px auto;
+    margin: 30px auto;
 }
 
 /* LEFT CONTENT */
@@ -88,21 +139,29 @@
 .loan-nav {
     background: #f6f6f6;
     border-radius: 10px;
-    padding: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
 }
 
 .loan-nav h4 {
     margin-bottom: 12px;
     font-size: 16px;
+    color: white;
+    background: #5a5a5a;
+    padding: 10px 15px;
+    margin: -25px -25px 15px -25px;
+    border-radius: 8px 8px 0 0;
 }
 
 .loan-nav a {
+    cursor: pointer;
     display: block;
     padding: 10px 12px;
     font-size: 14px;
     color: #333;
     text-decoration: none;
     border-radius: 6px;
+    
 }
 
 .loan-nav a:hover,
@@ -212,8 +271,245 @@
     font-weight: 600;
 }
 
+/* ===== DEPOSIT TABLE (HTML <table>) ===== */
+.deposit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.deposit-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.deposit-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.deposit-table td:first-child {
+    width: 35%;
+    font-weight: 600;
+    color: #333;
+}
+
+.deposit-table ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.deposit-table li {
+    margin-bottom: 6px;
+}
+
+/* ===== KB PRASAC STYLE TABLE ===== */
+.kb-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.kb-table thead th {
+    background: #5b5648; /* dark olive */
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.kb-table thead th:first-child {
+    width: 30%;
+}
+
+.kb-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #bdbdbd;
+    vertical-align: top;
+}
+
+.kb-table tbody tr:nth-child(odd) {
+    background: #f2f2f2;
+}
+
+.kb-table tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+/* LEFT COLUMN */
+.kb-table tbody td:first-child {
+    font-weight: 500;
+    color: #222;
+}
+
+/* BULLET LIST STYLE */
+.kb-list {
+    margin: 0;
+    padding-left: 18px;
+    list-style: none;
+}
+
+.kb-list li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 6px;
+}
+
+.kb-list li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: #f4b400; /* yellow square */
+    font-size: 8px;
+    top: 6px;
+}
+
 /* ================================================= */
+/* ================= TABS ======================== */
+.tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+.tab {
+    padding: 12px 24px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.tab.active {
+    background: #5a5a5a;
+    color: white;
+    border-bottom: 3px solid #f4d03f;
+}
+/* Operator Table */
+.operator-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.operator-table thead {
+    background: #5a5a5a;
+    color: white;
+}
+
+.operator-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.operator-table td {
+    padding: 20px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.operator-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.operator-table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+.operator-logo {
+    width: 80px;
+    height: auto;
+}
+
+.prefix-list {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Sidebar */
+.loan-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.loan-promo {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.promo-slider img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Related Products */
+.related-loans {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.related-loans h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.related-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+}
+
+.related-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.related-card p {
+    padding: 20px;
+    font-weight: 600;
+    color: #333;
+}
 /* ================= TABLET ======================== */
+table{
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 15px;
+}
+thead tr th{
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: left;
+    background: #534F42;
+    color: #FFFFFF;;
+}
+tbody tr td{
+    border: 1px solid #ddd; 
+    padding: 12px;
+}
 /* ================================================= */
 @media (max-width: 992px) {
     .loan-hero {
@@ -256,6 +552,10 @@
 /* ================================================= */
 @media (max-width: 576px) {
     .loan-hero {
+        padding: 40px 0;
+        min-height: auto;
+    }
+    .mobile-hero {
         padding: 40px 0;
         min-height: auto;
     }
