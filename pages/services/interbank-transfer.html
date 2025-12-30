@@ -1,16 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electricity Bill Payment</title>
+    <title>Deposit Machine</title>
     <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/repeat-style.css">
+    <style>
+        .loan-hero {
+            background: url('../../assets/deposit-machine-pc.png') center / cover no-repeat !important;
+        }
 
+        @media (max-width: 992px) {
+            .loan-hero {
+                background: url('../../assets/deposit-machine-mobile.png') center / cover no-repeat !important;
+                padding: 60px 0;
+                min-height: 50vh;
+            }
+        }
+    </style>
+</head>
 </head>
 
 <body>
@@ -203,25 +215,32 @@
 
                                 <div class="mega-col">
                                     <h4>Digital Banking</h4>
-                                    <a href="/pages/digital/digital-mobile.html">KB PRASAC Mobile</a>
-                                    <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                                    <a href="../digital/kb-prasac-corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/digital-account.html">Digital Account</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Self-Service</h4>
-                                    <a href="/pages/digital/atm.html">AMT</a>
-                                    <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/atm.html">ATM</a>
+                                    <a href="../digital/deposit-machine.html">Deposit Machine</a>
+                                    <a href="../digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/css.html">CSS</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Payments</h4>
-                                    <a href="/pages/digital/payments.html">Bill Payments</a>
-                                    <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
+                                    <a href="../digital/bill-payments.html">Bill Payments</a>
+                                    <a href="../digital/interbank-transfer.html">Interbank Fund Transfer</a>
+                                    <a href="../digital/international-transfer.html">International Fund Transfer</a>
+                                    <a href="../digital/phone-topup.html">Phone Top Up</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Other Services</h4>
-                                    <a href="/pages/digital/account.html">Digital Account</a>
+                                    <a href="../digital/qr-payment.html">QR Payment</a>
+                                    <a href="../digital/tax-payment.html">Tax Payment</a>
+                                    <a href="../digital/merchant-services.html">Merchant Services</a>
                                 </div>
 
                             </div>
@@ -241,72 +260,131 @@
         </div>
     </header>
 
-
-    <section class="payment">
+    <section class="loan-hero">
         <div class="container loan-hero-wrap">
             <div class="loan-hero-text">
-                <h1>Electricity Bill Payment</h1>
+                <h1>Deposit Machine</h1>
             </div>
         </div>
     </section>
 
-
     <div class="container">
-        <p class="breadcrumb">Digital <strong>/ Electricity Bill Payment</strong></p>
+        <p class="breadcrumb">Self-Banking <strong>/ Deposit Machine</strong></p>
     </div>
+
     <section class="loan-page container">
+
         <!-- LEFT -->
         <div class="loan-content">
-            <h2>Electricity Bill Payment</h2>
+
+            <h2>Deposit Machine</h2>
+
             <p class="loan-desc">
-                Don't waste your valued time, reduce household's expense by using electricity bill payment service via KB PRASAC Mobile in fast and convenient manner.
+                Now you can deposit into your account at anytime via KB PRASAC Cash Deposit Machine easily.
+                On top of this, you can perform self-banking transactions such as cash withdrawal, fund transfer,
+                Cash-Code, phone top-up, balance checking, and print bank statement.
             </p>
+
+            <!-- DEPOSIT LIMIT -->
             <div class="loan-block">
-                <table style="border-radius: 10px;">
-                    <thead style="border-radius: 10px;">
+                <h3>Deposit Limit</h3>
+
+                <table class="kb-table">
+                    <thead>
                         <tr>
-                            <th>Features</th>
-                            <th>Description</th>
+                            <th>Types of Deposit</th>
+                            <th>Limit per Transaction</th>
+                            <th>Limit per Day</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Condition</td>
-                            <td>Each customer has to have any Savings Account with KB PRASAC; and she or he is using ATM card or KB PRASAC Mobile/td>
-                                
+                            <td>Deposit with Account Number</td>
+                            <td>KHR 3,960,000 or USD 990</td>
+                            <td>No limit</td>
                         </tr>
-                        <tr style="background: #f9f9f9;">
-                            <td>Bill Payment Condition</td>
-                            <td>Payment can be made in advance of the expiry date at least 2 working days.</td>
+                        <tr>
+                            <td>Deposit via ATM Card</td>
+                            <td>KHR 20,000,000 or USD 20,000</td>
+                            <td>No limit</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit via ATM QR Code</td>
+                            <td>KHR 20,000,000 or USD 20,000</td>
+                            <td>No limit</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <!-- FEATURES -->
             <div class="loan-block">
-                <h3>Noted: </h3>
-                <p class="loan-desc">
-                    Don't waste your valued time, reduce household's expense by using electricity bill payment service via KB PRASAC Mobile in fast and convenient manner.
-                </p>
-             
+                <h3>Features</h3>
+
+                <table class="kb-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Descriptions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currency</td>
+                            <td>KHR and USD</td>
+                        </tr>
+                        <tr>
+                            <td>Type of denomination</td>
+                            <td>
+                                KHR: 1,000 | 2,000 | 5,000 | 10,000 | 20,000 | 50,000 | 100,000<br>
+                                USD: 1 | 2 | 5 | 10 | 20 | 50 | 100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Number of notes per transaction</td>
+                            <td>Up to 200 notes</td>
+                        </tr>
+                        <tr>
+                            <td>Service Tariff</td>
+                            <td>Free of charge</td>
+                        </tr>
+                        <tr>
+                            <td>Other Banking Transactions</td>
+                            <td>Please refer to ATM webpage</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
+            <!-- NOTE -->
+            <div class="loan-block">
+                <h3>Note</h3>
+                <ul>
+                    <li>Number of transactions per day is unlimited</li>
+                    <li>KB PRASAC reserves rights to change fee with prior notice as required by law</li>
+                    <li>Other terms and conditions apply</li>
+                </ul>
+            </div>
+
         </div>
 
         <!-- RIGHT -->
         <aside class="loan-sidebar">
+
             <div class="loan-nav">
-                <h4>Digital</h4>
-                <a href="/pages/digital/digital-mobile.html" class="active">KB PRASAC Mobile</a>
-                <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
-                <a href="/pages/digital/account.html">Digital Account</a>
-                <a href="/pages/digital/atm.html">ATM</a>
-                <a href="/pages/digital/payments.html">Bill Payments</a>
-                <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
-                <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                <h4>Self-Banking</h4>
+                <a href="./kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                <a href="./digital-account.html">Digital Account</a>
+                <a href="./atm.html">ATM</a>
+                <a class="active" href="./deposit-machine.html">Deposit Machine</a>
+                <a href="./css.html">CSS</a>
+                <a href="./bill-payments.html">Bill Payments</a>
+                <a href="./phone-topup.html">Phone Top Up</a>
+                <a href="./cash-code.html">Cash-Code</a>
             </div>
 
             <div class="loan-promo">
                 <div class="promo-slider">
-
                     <img src="../../assets/news2.png" alt="">
                     <img src="../../assets/news1.png" alt="">
                     <img src="../../assets/news3.png" alt="">

@@ -1,16 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electricity Bill Payment</title>
+    <title>Cash-Code</title>
     <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/repeat-style.css">
 
+    <style>
+        .loan-hero {
+            background: url('../../assets/atm-pc.png') center / cover no-repeat !important;
+        }
+
+        @media (max-width: 992px) {
+            .loan-hero {
+                background: url('../../assets/atm-mobile.png') center / cover no-repeat !important;
+                padding: 60px 0;
+                min-height: 50vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -64,8 +76,6 @@
         </div>
     </aside>
 
-    <div id="menuOverlay" class="menu-overlay"></div>
-
     <header class="header">
         <div class="container header-inner">
 
@@ -79,7 +89,7 @@
                     KB PRASAC Bank
                 </a>
                 <nav class="mobile-nav">
-                    <a href="#">Personal</a>a
+                    <a href="#">Personal</a>
                     <a href="#">Business</a>
                     <a href="#">Digital</a>
                     <a href="#">About Us</a>
@@ -203,25 +213,32 @@
 
                                 <div class="mega-col">
                                     <h4>Digital Banking</h4>
-                                    <a href="/pages/digital/digital-mobile.html">KB PRASAC Mobile</a>
-                                    <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                                    <a href="../digital/kb-prasac-corporate.html">KB PRASAC Corporate</a>
+                                    <a href="../digital/digital-account.html">Digital Account</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Self-Service</h4>
-                                    <a href="/pages/digital/atm.html">AMT</a>
-                                    <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/atm.html">ATM</a>
+                                    <a href="../digital/deposit-machine.html">Deposit Machine</a>
+                                    <a href="../digital/cash-code.html">Cash-Code</a>
+                                    <a href="../digital/css.html">CSS</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Payments</h4>
-                                    <a href="/pages/digital/payments.html">Bill Payments</a>
-                                    <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
+                                    <a href="../digital/bill-payments.html">Bill Payments</a>
+                                    <a href="../digital/interbank-transfer.html">Interbank Fund Transfer</a>
+                                    <a href="../digital/international-transfer.html">International Fund Transfer</a>
+                                    <a href="../digital/phone-topup.html">Phone Top Up</a>
                                 </div>
-                                
+
                                 <div class="mega-col">
                                     <h4>Other Services</h4>
-                                    <a href="/pages/digital/account.html">Digital Account</a>
+                                    <a href="../digital/qr-payment.html">QR Payment</a>
+                                    <a href="../digital/tax-payment.html">Tax Payment</a>
+                                    <a href="../digital/merchant-services.html">Merchant Services</a>
                                 </div>
 
                             </div>
@@ -240,77 +257,107 @@
 
         </div>
     </header>
-
-
-    <section class="payment">
+    <section class="loan-hero">
         <div class="container loan-hero-wrap">
             <div class="loan-hero-text">
-                <h1>Electricity Bill Payment</h1>
+                <h1>Cash-Code</h1>
             </div>
         </div>
     </section>
 
-
     <div class="container">
-        <p class="breadcrumb">Digital <strong>/ Electricity Bill Payment</strong></p>
+        <p class="breadcrumb">Self-Banking <strong>/ Cash-Code</strong></p>
     </div>
+
     <section class="loan-page container">
-        <!-- LEFT -->
+
+        <!-- LEFT CONTENT -->
         <div class="loan-content">
-            <h2>Electricity Bill Payment</h2>
+
+            <h2>Cash-Code</h2>
+
             <p class="loan-desc">
-                Don't waste your valued time, reduce household's expense by using electricity bill payment service via KB PRASAC Mobile in fast and convenient manner.
+                Cash-Code is a type of local money transfer which allows customers to transfer
+                cash to non-account persons by using a security code.
             </p>
+
+            <p class="loan-desc">
+                Any customers who have KB PRASAC ATM or KB PRASAC Mobile can transfer cash
+                to their relatives or business partners easily, fast, and securely.
+                Receivers can withdraw cash via KB PRASAC ATMs and all KB PRASAC branches across Cambodia.
+            </p>
+
+            <!-- TRANSFER AMOUNT -->
             <div class="loan-block">
-                <table style="border-radius: 10px;">
-                    <thead style="border-radius: 10px;">
+                <h3>Transfer Amount</h3>
+
+                <table class="kb-table">
+                    <thead>
                         <tr>
-                            <th>Features</th>
-                            <th>Description</th>
+                            <th>Transactions</th>
+                            <th>Limit size per day</th>
+                            <th>Limit size per transaction</th>
+                            <th>Service Tariff</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
-                            <td>Condition</td>
-                            <td>Each customer has to have any Savings Account with KB PRASAC; and she or he is using ATM card or KB PRASAC Mobile/td>
-                                
+                            <td>Transfer via ATM</td>
+                            <td>USD 3,000</td>
+                            <td>
+                                • USD 900<br>
+                                • KHR 2 million
+                            </td>
+                            <td>Free of charge</td>
                         </tr>
-                        <tr style="background: #f9f9f9;">
-                            <td>Bill Payment Condition</td>
-                            <td>Payment can be made in advance of the expiry date at least 2 working days.</td>
+
+                        <tr>
+                            <td>Transfer via KB PRASAC Mobile</td>
+                            <td>USD 2,500 or equivalent to KHR</td>
+                            <td>
+                                • USD 500<br>
+                                • KHR 2 million
+                            </td>
+                            <td>Free of charge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Number of transactions per day</td>
+                            <td colspan="3">Unlimited</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <!-- NOTE -->
             <div class="loan-block">
-                <h3>Noted: </h3>
-                <p class="loan-desc">
-                    Don't waste your valued time, reduce household's expense by using electricity bill payment service via KB PRASAC Mobile in fast and convenient manner.
-                </p>
-             
+                <h3>Note</h3>
+                <ul>
+                    <li>KB PRASAC reserves the right to change fees with prior notice as required by law</li>
+                    <li>Other conditions apply</li>
+                </ul>
             </div>
+
         </div>
 
-        <!-- RIGHT -->
+        <!-- RIGHT SIDEBAR -->
         <aside class="loan-sidebar">
+
             <div class="loan-nav">
-                <h4>Digital</h4>
-                <a href="/pages/digital/digital-mobile.html" class="active">KB PRASAC Mobile</a>
-                <a href="/pages/digital/corporate.html">KB PRASAC Corporate</a>
-                <a href="/pages/digital/account.html">Digital Account</a>
-                <a href="/pages/digital/atm.html">ATM</a>
-                <a href="/pages/digital/payments.html">Bill Payments</a>
-                <a href="/pages/digital/phone-top-up.html">Phone Top Up</a>
-                <a href="/pages/digital/cash-code.html">Cash-Code</a>
+                <h4>Self-Banking</h4>
+                <a href="./kb-prasac-mobile.html">KB PRASAC Mobile</a>
+                <a href="./digital-account.html">Digital Account</a>
+                <a href="./atm.html">ATM</a>
+                <a href="./deposit-machine.html">Deposit Machine</a>
+                <a href="./css.html">CSS</a>
+                <a href="./bill-payments.html">Bill Payments</a>
+                <a href="./phone-topup.html">Phone Top Up</a>
+                <a class="active" href="./cash-code.html">Cash-Code</a>
             </div>
 
             <div class="loan-promo">
-                <div class="promo-slider">
-
-                    <img src="../../assets/news2.png" alt="">
-                    <img src="../../assets/news1.png" alt="">
-                    <img src="../../assets/news3.png" alt="">
-                </div>
+                <img src="../../assets/promo-group-account.png" alt="">
             </div>
 
         </aside>
