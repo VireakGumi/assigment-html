@@ -109,13 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Open "Bank Overview" by default
-  const firstItem = document.querySelector('.menu-item.has-submenu');
-  if (firstItem) {
-    firstItem.classList.add('active');
-    firstItem.querySelector('.plus').textContent = '−';
-  }
-
   // Sidebar toggle
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('menuOverlay');
